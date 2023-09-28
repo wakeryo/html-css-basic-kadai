@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>分かりやすい将棋戦法一覧</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="将棋の駒が実際に動くから将棋初心者でも色んな戦法が理解しやすいサイトです">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kakoi.css">
+  </head>
+  <body>
+    <header>
+      <a href="index.html" id="logo"><img src="img/Salford & Co..png" alt="将棋まとめ"></a>
+    </header>
+    <nav>
+      <a href="tactice.html"><img src="img/tactice.png" alt="戦法"></a>
+      <a href="kakoi.html"><img src="img/enclosure.png" alt="囲い一覧"></a>
+      <a href="news.html"><img src="img/news.png" alt="ニュース"></a>
+      <a href="site.html"><img src="img/site.png" alt="無料サイト"></a> 
+    </nav>
+    <div id="menu">
+      <ol>
+        <li><a href="rule">将棋のルールについて</a></li>
+        <li><a href="#">駒の動かし方について</a></li>
+        <li><a href="penalty">反則について</a></li>
+        <li><a href="do">ルールを覚えたらやること</a></li>
+      </ol>
+    </div>
+
+    <div id="yagura">
+      <h2>矢倉</h2>
+      <table id="3-7gin">
+        <tr>
+          <th id="b9-1" class="b-aite">香</th><th id="b8-1" class="b-aite">桂</th><th id="b7-1" class="b-aite">銀</th><th id="b6-1" class="b-aite">金</th><th id="b5-1" class="b-aite">玉</th><th id="b4-1" class="b-aite">金</th><th id="b3-1" class="b-aite">銀</th><th id="b2-1" class="b-aite">桂</th><th id="b1-1" class="b-aite">香</th>
+        </tr>
+        <tr>
+          <th id="b9-2" class="b-aite"></th><th id="b8-2" class="b-aite">飛</th><th id="b7-2" class="b-aite"></th><th id="b6-2" class="b-aite"></th><th id="b5-2" class="b-aite"></th><th id="b4-2" class="b-aite"></th><th id="b3-2" class="b-aite"></th><th id="b2-2" class="b-aite">角</th><th id="b1-2" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-3" class="b-aite">歩</th><th id="b8-3" class="b-aite">歩</th><th id="b7-3" class="b-aite">歩</th><th id="b6-3" class="b-aite">歩</th><th id="b5-3" class="b-aite">歩</th><th id="b4-3" class="b-aite">歩</th><th id="b3-3" class="b-aite">歩</th><th id="b2-3" class="b-aite">歩</th><th id="b1-3" class="b-aite">歩</th>
+        </tr>       
+         <tr>
+          <th id="b9-4" class="b-aite"></th><th id="b8-4" class="b-aite"></th><th id="b7-4" class="b-aite"></th><th id="b6-4" class="b-aite"></th><th id="b5-4" class="b-aite"></th><th id="b4-4" class="b-aite"></th><th id="b3-4" class="b-aite"></th><th id="b2-4" class="b-aite"></th><th id="b1-4" class="b-aite"></th>
+        </tr>
+        <tr>
+          <th id="b9-5" class="b-aite"></th><th id="b8-5" class="b-aite"></th><th id="b7-5" class="b-aite"></th><th id="b6-5" class="b-aite"></th><th id="b5-5" class="b-aite"></th><th id="b4-5" class="b-aite"></th><th id="b3-5" class="b-aite"></th><th id="b2-5" class="b-aite"></th><th id="b1-5" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-6">歩</th><th id="b8-6" class="b-aite"></th><th id="b7-6">歩</th><th id="b6-6">歩</th><th id="b5-6">歩</th><th id="b4-6" class="b-aite"></th><th id="b3-6" class="b-aite"></th><th id="b2-6" class="b-aite"></th><th id="b1-6" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-7"></th><th id="b8-7">歩</th><th id="b7-7">銀</th><th id="b6-7">金</th><th id="b5-7"></th><th id="b4-7">歩</th><th id="b3-7">歩</th><th id="b2-7">歩</th><th id="b1-7">歩</th>
+        </tr>        
+        <tr>
+          <th id="b9-8"></th><th id="b8-8">王</th><th id="b7-8">金</th><th id="b6-8">角</th><th id="b5-8"></th><th id="b4-8"></th><th id="b3-8"></th><th id="b2-8">飛</th><th id="b1-8"></th>
+        </tr>        
+        <tr>
+          <th id="b9-9">香</th><th id="b8-9">桂</th><th id="b7-9"></th><th id="b6-9"></th><th id="b5-9"></th><th id="b4-9"></th><th id="b3-9">銀</th><th id="b2-9">桂</th><th id="b1-9">香</th>
+        </tr>
+      </table>
+      <p>矢倉は主に居飛車同士の戦いで使われるたいへん有名な囲いで、
+        上からの攻めに強いが、横からの攻めに弱いという特徴があります。</p>
+      <p>居飛車を好む初心者同士の戦いでもよく見られる戦型になりますので、
+        将棋を始めたての方も覚えておくといいでしょう。</p>
+    </div>
+
+    <div id="left-mino">
+      <h2>美濃囲い</h2>
+      <table id="3-7gin">
+        <tr>
+          <th id="b9-1" class="b-aite">香</th><th id="b8-1" class="b-aite">桂</th><th id="b7-1" class="b-aite">銀</th><th id="b6-1" class="b-aite">金</th><th id="b5-1" class="b-aite">玉</th><th id="b4-1" class="b-aite">金</th><th id="b3-1" class="b-aite">銀</th><th id="b2-1" class="b-aite">桂</th><th id="b1-1" class="b-aite">香</th>
+        </tr>
+        <tr>
+          <th id="b9-2" class="b-aite"></th><th id="b8-2" class="b-aite">飛</th><th id="b7-2" class="b-aite"></th><th id="b6-2" class="b-aite"></th><th id="b5-2" class="b-aite"></th><th id="b4-2" class="b-aite"></th><th id="b3-2" class="b-aite"></th><th id="b2-2" class="b-aite">角</th><th id="b1-2" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-3" class="b-aite">歩</th><th id="b8-3" class="b-aite">歩</th><th id="b7-3" class="b-aite">歩</th><th id="b6-3" class="b-aite">歩</th><th id="b5-3" class="b-aite">歩</th><th id="b4-3" class="b-aite">歩</th><th id="b3-3" class="b-aite">歩</th><th id="b2-3" class="b-aite">歩</th><th id="b1-3" class="b-aite">歩</th>
+        </tr>       
+         <tr>
+          <th id="b9-4" class="b-aite"></th><th id="b8-4" class="b-aite"></th><th id="b7-4" class="b-aite"></th><th id="b6-4" class="b-aite"></th><th id="b5-4" class="b-aite"></th><th id="b4-4" class="b-aite"></th><th id="b3-4" class="b-aite"></th><th id="b2-4" class="b-aite"></th><th id="b1-4" class="b-aite"></th>
+        </tr>
+        <tr>
+          <th id="b9-5" class="b-aite"></th><th id="b8-5" class="b-aite"></th><th id="b7-5" class="b-aite"></th><th id="b6-5" class="b-aite"></th><th id="b5-5" class="b-aite"></th><th id="b4-5" class="b-aite"></th><th id="b3-5" class="b-aite"></th><th id="b2-5" class="b-aite"></th><th id="b1-5" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-6"></th><th id="b8-6" class="b-aite"></th><th id="b7-6"></th><th id="b6-6"></th><th id="b5-6">歩</th><th id="b4-6" class="b-aite"></th><th id="b3-6" class="b-aite"></th><th id="b2-6" class="b-aite"></th><th id="b1-6" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-7">歩</th><th id="b8-7">歩</th><th id="b7-7">歩</th><th id="b6-7">歩</th><th id="b5-7"></th><th id="b4-7">歩</th><th id="b3-7">歩</th><th id="b2-7">歩</th><th id="b1-7">歩</th>
+        </tr>        
+        <tr>
+          <th id="b9-8"></th><th id="b8-8">角</th><th id="b7-8"></th><th id="b6-8">飛</th><th id="b5-8">金</th><th id="b4-8"></th><th id="b3-8">銀</th><th id="b2-8">王</th><th id="b1-8"></th>
+        </tr>        
+        <tr>
+          <th id="b9-9">香</th><th id="b8-9">桂</th><th id="b7-9">銀</th><th id="b6-9"></th><th id="b5-9"></th><th id="b4-9">金</th><th id="b3-9"></th><th id="b2-9">桂</th><th id="b1-9">香</th>
+        </tr>
+      </table>
+      <p>本来、美濃囲いは振り飛車のための囲いですが、居飛車でも作ることができます。</p>
+      <p>船囲いよりも横からの攻めに強くなり終盤も安定した戦いができるようになるはずです。</p>
+    </div>
+
+    <div id="left-mino">
+      <h2>高美濃囲い</h2>
+      <table id="3-7gin">
+        <tr>
+          <th id="b9-1" class="b-aite">香</th><th id="b8-1" class="b-aite">桂</th><th id="b7-1" class="b-aite">銀</th><th id="b6-1" class="b-aite">金</th><th id="b5-1" class="b-aite">玉</th><th id="b4-1" class="b-aite">金</th><th id="b3-1" class="b-aite">銀</th><th id="b2-1" class="b-aite">桂</th><th id="b1-1" class="b-aite">香</th>
+        </tr>
+        <tr>
+          <th id="b9-2" class="b-aite"></th><th id="b8-2" class="b-aite">飛</th><th id="b7-2" class="b-aite"></th><th id="b6-2" class="b-aite"></th><th id="b5-2" class="b-aite"></th><th id="b4-2" class="b-aite"></th><th id="b3-2" class="b-aite"></th><th id="b2-2" class="b-aite">角</th><th id="b1-2" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-3" class="b-aite">歩</th><th id="b8-3" class="b-aite">歩</th><th id="b7-3" class="b-aite">歩</th><th id="b6-3" class="b-aite">歩</th><th id="b5-3" class="b-aite">歩</th><th id="b4-3" class="b-aite">歩</th><th id="b3-3" class="b-aite">歩</th><th id="b2-3" class="b-aite">歩</th><th id="b1-3" class="b-aite">歩</th>
+        </tr>       
+         <tr>
+          <th id="b9-4" class="b-aite"></th><th id="b8-4" class="b-aite"></th><th id="b7-4" class="b-aite"></th><th id="b6-4" class="b-aite"></th><th id="b5-4" class="b-aite"></th><th id="b4-4" class="b-aite"></th><th id="b3-4" class="b-aite"></th><th id="b2-4" class="b-aite"></th><th id="b1-4" class="b-aite"></th>
+        </tr>
+        <tr>
+          <th id="b9-5" class="b-aite"></th><th id="b8-5" class="b-aite"></th><th id="b7-5" class="b-aite"></th><th id="b6-5" class="b-aite"></th><th id="b5-5" class="b-aite"></th><th id="b4-5" class="b-aite"></th><th id="b3-5" class="b-aite"></th><th id="b2-5" class="b-aite"></th><th id="b1-5" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-6"></th><th id="b8-6" class="b-aite"></th><th id="b7-6"></th><th id="b6-6"></th><th id="b5-6"></th><th id="b4-6" class="b-aite">歩</th><th id="b3-6" class="b-aite">歩</th><th id="b2-6" class="b-aite">歩</th><th id="b1-6" class="b-aite">歩</th>
+        </tr>        
+        <tr>
+          <th id="b9-7">歩</th><th id="b8-7">歩</th><th id="b7-7">歩</th><th id="b6-7">歩</th><th id="b5-7">歩</th><th id="b4-7">金</th><th id="b3-7">桂</th><th id="b2-7">銀</th><th id="b1-7"></th>
+        </tr>        
+        <tr>
+          <th id="b9-8"></th><th id="b8-8"></th><th id="b7-8"></th><th id="b6-8">飛</th><th id="b5-8"></th><th id="b4-8"></th><th id="b3-8">金</th><th id="b2-8">王</th><th id="b1-8"></th>
+        </tr>        
+        <tr>
+          <th id="b9-9">香</th><th id="b8-9">桂</th><th id="b7-9">銀</th><th id="b6-9"></th><th id="b5-9"></th><th id="b4-9"></th><th id="b3-9"></th><th id="b2-9"></th><th id="b1-9">香</th>
+        </tr>
+      </table>
+      <p>美濃囲い→高美濃囲いと移りさらに進化させた囲いが「銀冠」です。
+        高美濃囲いから4手使います。</p>
+      <p>銀を王の頭に置く囲いで、上や端の攻撃にめっぽう強くなります。
+        逆に横や下からの攻めに弱くなってしまいます。</p>
+    </div>
+
+    <div id="left-mino">
+      <h2>銀冠</h2>
+    <table id="3-7gin">
+      <tr>
+        <th id="b9-1" class="b-aite">香</th><th id="b8-1" class="b-aite">桂</th><th id="b7-1" class="b-aite">銀</th><th id="b6-1" class="b-aite">金</th><th id="b5-1" class="b-aite">玉</th><th id="b4-1" class="b-aite">金</th><th id="b3-1" class="b-aite">銀</th><th id="b2-1" class="b-aite">桂</th><th id="b1-1" class="b-aite">香</th>
+      </tr>
+      <tr>
+        <th id="b9-2" class="b-aite"></th><th id="b8-2" class="b-aite">飛</th><th id="b7-2" class="b-aite"></th><th id="b6-2" class="b-aite"></th><th id="b5-2" class="b-aite"></th><th id="b4-2" class="b-aite"></th><th id="b3-2" class="b-aite"></th><th id="b2-2" class="b-aite">角</th><th id="b1-2" class="b-aite"></th>
+      </tr>        
+      <tr>
+        <th id="b9-3" class="b-aite">歩</th><th id="b8-3" class="b-aite">歩</th><th id="b7-3" class="b-aite">歩</th><th id="b6-3" class="b-aite">歩</th><th id="b5-3" class="b-aite">歩</th><th id="b4-3" class="b-aite">歩</th><th id="b3-3" class="b-aite">歩</th><th id="b2-3" class="b-aite">歩</th><th id="b1-3" class="b-aite">歩</th>
+      </tr>       
+       <tr>
+        <th id="b9-4" class="b-aite"></th><th id="b8-4" class="b-aite"></th><th id="b7-4" class="b-aite"></th><th id="b6-4" class="b-aite"></th><th id="b5-4" class="b-aite"></th><th id="b4-4" class="b-aite"></th><th id="b3-4" class="b-aite"></th><th id="b2-4" class="b-aite"></th><th id="b1-4" class="b-aite"></th>
+      </tr>
+      <tr>
+        <th id="b9-5" class="b-aite"></th><th id="b8-5" class="b-aite"></th><th id="b7-5" class="b-aite"></th><th id="b6-5" class="b-aite"></th><th id="b5-5" class="b-aite"></th><th id="b4-5" class="b-aite"></th><th id="b3-5" class="b-aite"></th><th id="b2-5" class="b-aite"></th><th id="b1-5" class="b-aite"></th>
+      </tr>        
+      <tr>
+        <th id="b9-6"></th><th id="b8-6" class="b-aite"></th><th id="b7-6"></th><th id="b6-6"></th><th id="b5-6"></th><th id="b4-6" class="b-aite">歩</th><th id="b3-6" class="b-aite"></th><th id="b2-6" class="b-aite"></th><th id="b1-6" class="b-aite">歩</th>
+      </tr>        
+      <tr>
+        <th id="b9-7">歩</th><th id="b8-7">歩</th><th id="b7-7">歩</th><th id="b6-7">歩</th><th id="b5-7">歩</th><th id="b4-7">金</th><th id="b3-7">歩</th><th id="b2-7">歩</th><th id="b1-7"></th>
+      </tr>        
+      <tr>
+        <th id="b9-8"></th><th id="b8-8"></th><th id="b7-8"></th><th id="b6-8">飛</th><th id="b5-8"></th><th id="b4-8"></th><th id="b3-8">銀</th><th id="b2-8">王</th><th id="b1-8"></th>
+      </tr>        
+      <tr>
+        <th id="b9-9">香</th><th id="b8-9">桂</th><th id="b7-9">銀</th><th id="b6-9"></th><th id="b5-9"></th><th id="b4-9">金</th><th id="b3-9"></th><th id="b2-9">桂</th><th id="b1-9">香</th>
+      </tr>
+    </table>
+    <p>本来、美濃囲いは振り飛車のための囲いですが、居飛車でも作ることができます。</p>
+    <p>船囲いよりも横からの攻めに強くなり終盤も安定した戦いができるようになるはずです。</p>
+  </div>
+
+  <div id="left-mino">
+    <h2>振り飛車穴熊</h2>
+    <table id="3-7gin">
+      <tr>
+        <th id="b9-1" class="b-aite">香</th><th id="b8-1" class="b-aite">桂</th><th id="b7-1" class="b-aite">銀</th><th id="b6-1" class="b-aite">金</th><th id="b5-1" class="b-aite">玉</th><th id="b4-1" class="b-aite">金</th><th id="b3-1" class="b-aite">銀</th><th id="b2-1" class="b-aite">桂</th><th id="b1-1" class="b-aite">香</th>
+      </tr>
+      <tr>
+        <th id="b9-2" class="b-aite"></th><th id="b8-2" class="b-aite">飛</th><th id="b7-2" class="b-aite"></th><th id="b6-2" class="b-aite"></th><th id="b5-2" class="b-aite"></th><th id="b4-2" class="b-aite"></th><th id="b3-2" class="b-aite"></th><th id="b2-2" class="b-aite">角</th><th id="b1-2" class="b-aite"></th>
+      </tr>        
+      <tr>
+        <th id="b9-3" class="b-aite">歩</th><th id="b8-3" class="b-aite">歩</th><th id="b7-3" class="b-aite">歩</th><th id="b6-3" class="b-aite">歩</th><th id="b5-3" class="b-aite">歩</th><th id="b4-3" class="b-aite">歩</th><th id="b3-3" class="b-aite">歩</th><th id="b2-3" class="b-aite">歩</th><th id="b1-3" class="b-aite">歩</th>
+      </tr>       
+       <tr>
+        <th id="b9-4" class="b-aite"></th><th id="b8-4" class="b-aite"></th><th id="b7-4" class="b-aite"></th><th id="b6-4" class="b-aite"></th><th id="b5-4" class="b-aite"></th><th id="b4-4" class="b-aite"></th><th id="b3-4" class="b-aite"></th><th id="b2-4" class="b-aite"></th><th id="b1-4" class="b-aite"></th>
+      </tr>
+      <tr>
+        <th id="b9-5" class="b-aite"></th><th id="b8-5" class="b-aite"></th><th id="b7-5" class="b-aite"></th><th id="b6-5" class="b-aite"></th><th id="b5-5" class="b-aite"></th><th id="b4-5" class="b-aite"></th><th id="b3-5" class="b-aite"></th><th id="b2-5" class="b-aite"></th><th id="b1-5" class="b-aite"></th>
+      </tr>        
+      <tr>
+        <th id="b9-6"></th><th id="b8-6" class="b-aite"></th><th id="b7-6"></th><th id="b6-6"></th><th id="b5-6">歩</th><th id="b4-6" class="b-aite"></th><th id="b3-6" class="b-aite"></th><th id="b2-6" class="b-aite"></th><th id="b1-6" class="b-aite"></th>
+      </tr>        
+      <tr>
+        <th id="b9-7">歩</th><th id="b8-7">歩</th><th id="b7-7">歩</th><th id="b6-7">歩</th><th id="b5-7"></th><th id="b4-7">歩</th><th id="b3-7">歩</th><th id="b2-7">歩</th><th id="b1-7">歩</th>
+      </tr>        
+      <tr>
+        <th id="b9-8"></th><th id="b8-8">角</th><th id="b7-8"></th><th id="b6-8">飛</th><th id="b5-8"></th><th id="b4-8"></th><th id="b3-8">金</th><th id="b2-8">銀</th><th id="b1-8">香</th>
+      </tr>        
+      <tr>
+        <th id="b9-9">香</th><th id="b8-9">桂</th><th id="b7-9">銀</th><th id="b6-9"></th><th id="b5-9"></th><th id="b4-9"></th><th id="b3-9">金</th><th id="b2-9">桂</th><th id="b1-9">王</th>
+      </tr>
+    </table>
+    <p>数ある囲いの中で一番堅い囲いです。
+      囲いを作るのに手数がかかるのと、王が隅っこで囲まれているので悪く言うと逃げ道がないというデメリットがあります。</p>
+    <p>途中までは、美濃囲いと同じなので、相手で出方を見てどちらの囲いにするか決めるのもいいでしょう。</p>
+  </div>
+
+    <div id="left-mino">
+      <h2>左美濃囲い</h2>
+      <table id="3-7gin">
+        <tr>
+          <th id="b9-1" class="b-aite">香</th><th id="b8-1" class="b-aite">桂</th><th id="b7-1" class="b-aite">銀</th><th id="b6-1" class="b-aite">金</th><th id="b5-1" class="b-aite">玉</th><th id="b4-1" class="b-aite">金</th><th id="b3-1" class="b-aite">銀</th><th id="b2-1" class="b-aite">桂</th><th id="b1-1" class="b-aite">香</th>
+        </tr>
+        <tr>
+          <th id="b9-2" class="b-aite"></th><th id="b8-2" class="b-aite">飛</th><th id="b7-2" class="b-aite"></th><th id="b6-2" class="b-aite"></th><th id="b5-2" class="b-aite"></th><th id="b4-2" class="b-aite"></th><th id="b3-2" class="b-aite"></th><th id="b2-2" class="b-aite">角</th><th id="b1-2" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-3" class="b-aite">歩</th><th id="b8-3" class="b-aite">歩</th><th id="b7-3" class="b-aite">歩</th><th id="b6-3" class="b-aite">歩</th><th id="b5-3" class="b-aite">歩</th><th id="b4-3" class="b-aite">歩</th><th id="b3-3" class="b-aite">歩</th><th id="b2-3" class="b-aite">歩</th><th id="b1-3" class="b-aite">歩</th>
+        </tr>       
+         <tr>
+          <th id="b9-4" class="b-aite"></th><th id="b8-4" class="b-aite"></th><th id="b7-4" class="b-aite"></th><th id="b6-4" class="b-aite"></th><th id="b5-4" class="b-aite"></th><th id="b4-4" class="b-aite"></th><th id="b3-4" class="b-aite"></th><th id="b2-4" class="b-aite"></th><th id="b1-4" class="b-aite"></th>
+        </tr>
+        <tr>
+          <th id="b9-5" class="b-aite"></th><th id="b8-5" class="b-aite"></th><th id="b7-5" class="b-aite"></th><th id="b6-5" class="b-aite"></th><th id="b5-5" class="b-aite"></th><th id="b4-5" class="b-aite"></th><th id="b3-5" class="b-aite"></th><th id="b2-5" class="b-aite"></th><th id="b1-5" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-6">歩</th><th id="b8-6" class="b-aite"></th><th id="b7-6">歩</th><th id="b6-6"></th><th id="b5-6">歩</th><th id="b4-6" class="b-aite"></th><th id="b3-6" class="b-aite"></th><th id="b2-6" class="b-aite"></th><th id="b1-6" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-7"></th><th id="b8-7">歩</th><th id="b7-7">角</th><th id="b6-7">歩</th><th id="b5-7"></th><th id="b4-7">歩</th><th id="b3-7">歩</th><th id="b2-7">歩</th><th id="b1-7">歩</th>
+        </tr>        
+        <tr>
+          <th id="b9-8"></th><th id="b8-8">王</th><th id="b7-8">銀</th><th id="b6-8"></th><th id="b5-8">金</th><th id="b4-8"></th><th id="b3-8"></th><th id="b2-8">飛</th><th id="b1-8"></th>
+        </tr>        
+        <tr>
+          <th id="b9-9">香</th><th id="b8-9">桂</th><th id="b7-9"></th><th id="b6-9">金</th><th id="b5-9"></th><th id="b4-9"></th><th id="b3-9">銀</th><th id="b2-9">桂</th><th id="b1-9">香</th>
+        </tr>
+      </table>
+      <p>本来、美濃囲いは振り飛車のための囲いですが、居飛車でも作ることができます。</p>
+      <p>船囲いよりも横からの攻めに強くなり終盤も安定した戦いができるようになるはずです。</p>
+    </div>
+
+    <div id="hunagakoi">
+      <h2>船囲い</h2>
+      <table id="3-7gin">
+        <tr>
+          <th id="b9-1" class="b-aite">香</th><th id="b8-1" class="b-aite">桂</th><th id="b7-1" class="b-aite">銀</th><th id="b6-1" class="b-aite">金</th><th id="b5-1" class="b-aite">玉</th><th id="b4-1" class="b-aite">金</th><th id="b3-1" class="b-aite">銀</th><th id="b2-1" class="b-aite">桂</th><th id="b1-1" class="b-aite">香</th>
+        </tr>
+        <tr>
+          <th id="b9-2" class="b-aite"></th><th id="b8-2" class="b-aite">飛</th><th id="b7-2" class="b-aite"></th><th id="b6-2" class="b-aite"></th><th id="b5-2" class="b-aite"></th><th id="b4-2" class="b-aite"></th><th id="b3-2" class="b-aite"></th><th id="b2-2" class="b-aite">角</th><th id="b1-2" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-3" class="b-aite">歩</th><th id="b8-3" class="b-aite">歩</th><th id="b7-3" class="b-aite">歩</th><th id="b6-3" class="b-aite">歩</th><th id="b5-3" class="b-aite">歩</th><th id="b4-3" class="b-aite">歩</th><th id="b3-3" class="b-aite">歩</th><th id="b2-3" class="b-aite">歩</th><th id="b1-3" class="b-aite">歩</th>
+        </tr>       
+         <tr>
+          <th id="b9-4" class="b-aite"></th><th id="b8-4" class="b-aite"></th><th id="b7-4" class="b-aite"></th><th id="b6-4" class="b-aite"></th><th id="b5-4" class="b-aite"></th><th id="b4-4" class="b-aite"></th><th id="b3-4" class="b-aite"></th><th id="b2-4" class="b-aite"></th><th id="b1-4" class="b-aite"></th>
+        </tr>
+        <tr>
+          <th id="b9-5" class="b-aite"></th><th id="b8-5" class="b-aite"></th><th id="b7-5" class="b-aite"></th><th id="b6-5" class="b-aite"></th><th id="b5-5" class="b-aite"></th><th id="b4-5" class="b-aite"></th><th id="b3-5" class="b-aite"></th><th id="b2-5" class="b-aite"></th><th id="b1-5" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-6">歩</th><th id="b8-6" class="b-aite"></th><th id="b7-6">歩</th><th id="b6-6"></th><th id="b5-6">歩</th><th id="b4-6" class="b-aite"></th><th id="b3-6" class="b-aite"></th><th id="b2-6" class="b-aite"></th><th id="b1-6" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-7"></th><th id="b8-7">歩</th><th id="b7-7"></th><th id="b6-7">歩</th><th id="b5-7"></th><th id="b4-7">歩</th><th id="b3-7">歩</th><th id="b2-7">歩</th><th id="b1-7">歩</th>
+        </tr>        
+        <tr>
+          <th id="b9-8"></th><th id="b8-8">角</th><th id="b7-8">王</th><th id="b6-8"></th><th id="b5-8">金</th><th id="b4-8"></th><th id="b3-8"></th><th id="b2-8">飛</th><th id="b1-8"></th>
+        </tr>        
+        <tr>
+          <th id="b9-9">香</th><th id="b8-9">桂</th><th id="b7-9">銀</th><th id="b6-9">金</th><th id="b5-9"></th><th id="b4-9"></th><th id="b3-9">銀</th><th id="b2-9">桂</th><th id="b1-9">香</th>
+        </tr>
+      </table>
+      <p>舟囲い（船囲い）は最も手数をかけずに囲えるお手軽な囲いです。
+        王様が船に乗っているような姿からその名前がつけられました。</p>
+      <p>横からの攻めに強いので相手が振り飛車の時に使います。
+        手数をかけずにお手軽に囲える分、守備力は弱いです。</p>
+    </div>
+
+    <div id="anaguma">
+      <h2>居飛車穴熊</h2>
+      <table id="3-7gin">
+        <tr>
+          <th id="b9-1" class="b-aite">香</th><th id="b8-1" class="b-aite">桂</th><th id="b7-1" class="b-aite">銀</th><th id="b6-1" class="b-aite">金</th><th id="b5-1" class="b-aite">玉</th><th id="b4-1" class="b-aite">金</th><th id="b3-1" class="b-aite">銀</th><th id="b2-1" class="b-aite">桂</th><th id="b1-1" class="b-aite">香</th>
+        </tr>
+        <tr>
+          <th id="b9-2" class="b-aite"></th><th id="b8-2" class="b-aite">飛</th><th id="b7-2" class="b-aite"></th><th id="b6-2" class="b-aite"></th><th id="b5-2" class="b-aite"></th><th id="b4-2" class="b-aite"></th><th id="b3-2" class="b-aite"></th><th id="b2-2" class="b-aite">角</th><th id="b1-2" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-3" class="b-aite">歩</th><th id="b8-3" class="b-aite">歩</th><th id="b7-3" class="b-aite">歩</th><th id="b6-3" class="b-aite">歩</th><th id="b5-3" class="b-aite">歩</th><th id="b4-3" class="b-aite">歩</th><th id="b3-3" class="b-aite">歩</th><th id="b2-3" class="b-aite">歩</th><th id="b1-3" class="b-aite">歩</th>
+        </tr>       
+         <tr>
+          <th id="b9-4" class="b-aite"></th><th id="b8-4" class="b-aite"></th><th id="b7-4" class="b-aite"></th><th id="b6-4" class="b-aite"></th><th id="b5-4" class="b-aite"></th><th id="b4-4" class="b-aite"></th><th id="b3-4" class="b-aite"></th><th id="b2-4" class="b-aite"></th><th id="b1-4" class="b-aite"></th>
+        </tr>
+        <tr>
+          <th id="b9-5" class="b-aite"></th><th id="b8-5" class="b-aite"></th><th id="b7-5" class="b-aite"></th><th id="b6-5" class="b-aite"></th><th id="b5-5" class="b-aite"></th><th id="b4-5" class="b-aite"></th><th id="b3-5" class="b-aite"></th><th id="b2-5" class="b-aite"></th><th id="b1-5" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-6"></th><th id="b8-6" class="b-aite"></th><th id="b7-6">歩</th><th id="b6-6"></th><th id="b5-6"></th><th id="b4-6" class="b-aite"></th><th id="b3-6" class="b-aite"></th><th id="b2-6" class="b-aite"></th><th id="b1-6" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-7">歩</th><th id="b8-7">歩</th><th id="b7-7">角</th><th id="b6-7">歩</th><th id="b5-7">歩</th><th id="b4-7">歩</th><th id="b3-7">歩</th><th id="b2-7">歩</th><th id="b1-7">歩</th>
+        </tr>        
+        <tr>
+          <th id="b9-8">香</th><th id="b8-8">銀</th><th id="b7-8">金</th><th id="b6-8"></th><th id="b5-8"></th><th id="b4-8"></th><th id="b3-8"></th><th id="b2-8">飛</th><th id="b1-8"></th>
+        </tr>        
+        <tr>
+          <th id="b9-9">王</th><th id="b8-9">桂</th><th id="b7-9">金</th><th id="b6-9"></th><th id="b5-9"></th><th id="b4-9"></th><th id="b3-9">銀</th><th id="b2-9">桂</th><th id="b1-9">香</th>
+        </tr>
+      </table>
+      <p>居飛車の囲いの中では最強の囲いです。
+        絶対に王手がかからないので、攻めることに集中できます。</p>
+      <p>その半面、多くの駒を守りに使うので攻めの駒が足りなかったり、
+        一番奥に王様を置くので逃げ道がないといった弱点もあります。</p>
+    </div>
+    
+    <div id="gangigakoi">
+      <h2>雁木（がんぎ）囲い</h2>
+      <table id="3-7gin">
+        <tr>
+          <th id="b9-1" class="b-aite">香</th><th id="b8-1" class="b-aite">桂</th><th id="b7-1" class="b-aite">銀</th><th id="b6-1" class="b-aite">金</th><th id="b5-1" class="b-aite">玉</th><th id="b4-1" class="b-aite">金</th><th id="b3-1" class="b-aite">銀</th><th id="b2-1" class="b-aite">桂</th><th id="b1-1" class="b-aite">香</th>
+        </tr>
+        <tr>
+          <th id="b9-2" class="b-aite"></th><th id="b8-2" class="b-aite">飛</th><th id="b7-2" class="b-aite"></th><th id="b6-2" class="b-aite"></th><th id="b5-2" class="b-aite"></th><th id="b4-2" class="b-aite"></th><th id="b3-2" class="b-aite"></th><th id="b2-2" class="b-aite">角</th><th id="b1-2" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-3" class="b-aite">歩</th><th id="b8-3" class="b-aite">歩</th><th id="b7-3" class="b-aite">歩</th><th id="b6-3" class="b-aite">歩</th><th id="b5-3" class="b-aite">歩</th><th id="b4-3" class="b-aite">歩</th><th id="b3-3" class="b-aite">歩</th><th id="b2-3" class="b-aite">歩</th><th id="b1-3" class="b-aite">歩</th>
+        </tr>       
+         <tr>
+          <th id="b9-4" class="b-aite"></th><th id="b8-4" class="b-aite"></th><th id="b7-4" class="b-aite"></th><th id="b6-4" class="b-aite"></th><th id="b5-4" class="b-aite"></th><th id="b4-4" class="b-aite"></th><th id="b3-4" class="b-aite"></th><th id="b2-4" class="b-aite"></th><th id="b1-4" class="b-aite"></th>
+        </tr>
+        <tr>
+          <th id="b9-5" class="b-aite"></th><th id="b8-5" class="b-aite">歩</th><th id="b7-5" class="b-aite"></th><th id="b6-5" class="b-aite"></th><th id="b5-5" class="b-aite"></th><th id="b4-5" class="b-aite"></th><th id="b3-5" class="b-aite"></th><th id="b2-5" class="b-aite"></th><th id="b1-5" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-6">歩</th><th id="b8-6" class="b-aite"></th><th id="b7-6">歩</th><th id="b6-6"></th><th id="b5-6">歩</th><th id="b4-6" class="b-aite">歩</th><th id="b3-6" class="b-aite">歩</th><th id="b2-6" class="b-aite"></th><th id="b1-6" class="b-aite"></th>
+        </tr>        
+        <tr>
+          <th id="b9-7"></th><th id="b8-7">歩</th><th id="b7-7"></th><th id="b6-7">銀</th><th id="b5-7">銀</th><th id="b4-7"></th><th id="b3-7"></th><th id="b2-7">歩</th><th id="b1-7">歩</th>
+        </tr>        
+        <tr>
+          <th id="b9-8"></th><th id="b8-8">角</th><th id="b7-8">金</th><th id="b6-8"></th><th id="b5-8">金</th><th id="b4-8">飛</th><th id="b3-8"></th><th id="b2-8"></th><th id="b1-8"></th>
+        </tr>        
+        <tr>
+          <th id="b9-9">香</th><th id="b8-9">桂</th><th id="b7-9"></th><th id="b6-9">王</th><th id="b5-9"></th><th id="b4-9"></th><th id="b3-9">銀</th><th id="b2-9">桂</th><th id="b1-9">香</th>
+        </tr>
+      </table>
+      <p>世にも珍しい囲い「雁木」。
+        あまり有名ではないですが、知っておくと面白いんじゃないかなと思ったので紹介します。</p>
+      <p>雁木は囲いごと突っ込んでいくイメージです。
+        楽しいですが、よほどの実力者でないと勝つのが難しいです。</p>
+    </div>
+      <script src=""></script>
+    </body>
+  </html>

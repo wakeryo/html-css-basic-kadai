@@ -1,0 +1,73 @@
+/* 全体フォント */
+body {
+  font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+  width: 1000px;
+  margin: auto;
+}
+
+p {
+  font-size: 18px;
+}
+
+body {
+  width: 1500px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ルール早見表  */
+.sample {
+  display: flex;
+  justify-content: center;
+}
+
+.sample-color {
+  position: relative;
+}
+
+.sample-color > a {
+  position: absolute;
+  bottom: 0;
+}
+
+/* ヘッダー・ナビのところ */
+header {
+  height: 150px;
+  background-image: url(img/名称未設定のデザイン.png);
+}
+nav {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  background-color: #d2b48c;
+}
+nav > a {
+  width: 25%;
+}
+/* 駒の動かし方 */
+.koma-move > h2 {
+  background-color: #d2b48c;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5em;
+  text-decoration-color: #ffff00;
+  text-underline-offset: -0.2em;
+  text-decoration-skip-ink: none;
+  padding: 8px 12px;
+}
+/* 実際に動かすところ */
+th , td {
+  border: solid 1px #333;
+  width: 100px;
+  height: 100px;
+  font-size: 40px;
+}
+
+#hisya {
+  display: flex;
+}
+table {
+  margin: 0 50px;
+}
+#kaku {
+  display: flex;
+}
